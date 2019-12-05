@@ -6,7 +6,7 @@ const DAL = require('./dataAccessLayer');
 const ObjectId = require('mongodb').ObjectId;
 require('dotenv').config();
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 const cors = require('cors');
  
 app.use(bodyParser.json());
